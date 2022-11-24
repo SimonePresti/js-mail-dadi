@@ -47,26 +47,31 @@ const emails = [
 ];
 
 
-const userEmail = document.getElementById ('e-mail');
+const userEmail = document.getElementById ('e-mails');
 
-const button = document.getElementById ('button');
+const button = document.querySelector ('div.buttons a.btn');
 
-let trovato = false;
 
-for (let i = 0; i < emails.length; i++) {
 
-    if (userEmail == emails[i]) {
-        trovato = true;
+
+button.addEventListener ('click', function() {
+    
+    let trovato = false;
+    
+      for (let i = 0; i < emails.length; i++) {
+
+        if (userEmail.value == emails[i]) {
+            trovato = true;
+        }
     }
-}
-
-if (trovato) {
-    console.log ('trovato');
-
-} else {
-    console.log ('non trovato')
-}
-
+    
+    if (trovato) {
+        console.log ('trovato');
+    
+    } else {
+        console.log ('non trovato')
+    }
+})
 
     
 
