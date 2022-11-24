@@ -1,6 +1,30 @@
 // Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+// FIRST EXERCISE
+
+const player = (Math.floor((Math.random() * 6) + 1));
+console.log (player)
+
+const computer = (Math.floor((Math.random() * 6) + 1));
+console.log (computer)
+
+if (player > computer) {
+    console.log ('Player Win');
+
+} else if ( player < computer) {
+    console.log ('Computer Win');
+
+} else if (player === computer) {
+    console.log ('Draw');
+
+}
+
+
+
+// SECOND EXERCISE
+    
 // Mail
 // Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 // Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un array da qualche parte? Se dobbiamo confrontare qualcosa che "cosa" ci serve?
@@ -13,26 +37,26 @@
 // Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 
 
+const emails = [
+    'Goku@gmail.com',
+    'Rufy@gmail.com',
+    'Naruto@gmail.com',
+    'Deku@gmail.com',
+    'Eren@gmail.com',
+    'Guts@gmail.com',
+];
 
 
-const player = (Math.floor((Math.random() * 6) + 1));
-console.log (player)
+const userEmail = document.getElementById ('e-mail');
 
-const computer = (Math.floor((Math.random() * 6) + 1));
-console.log (computer)
+const button = document.getElementById ('button');
 
-if (player > computer) {
-    console.log ('Player ha vinto')
+let trovato = false;
 
-} else if ( player < computer) {
-    console.log ('Computer ha vinto');
+for (let i = 0; i < lista.length; i++) {
 
-} else if (player == computer) {
-    console.log ('Pareggio');
-
+    if 
 }
-    
-
 
 
     
