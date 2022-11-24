@@ -53,9 +53,18 @@ const button = document.getElementById ('button');
 
 let trovato = false;
 
-for (let i = 0; i < lista.length; i++) {
+for (let i = 0; i < emails.length; i++) {
 
-    if 
+    if (userEmail == emails[i]) {
+        trovato = true;
+    }
+}
+
+if (trovato) {
+    console.log ('trovato');
+
+} else {
+    console.log ('non trovato')
 }
 
 
